@@ -1,0 +1,33 @@
+// --------------------------------------------------------------------
+// Flexbox Grid System
+// --------------------------------------------------------------------
+
+// Container
+// -------------------------
+.container {
+  width: calc(100% - 5em);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Row Setup
+// -------------------------
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// Number of Columms
+// -------------------------
+$columns: 12;
+
+// For Loop to create cols and offsets
+// -------------------------
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 100% / $columns * $i;
+  }
+  .col-off-#{$i} {
+    margin-left: 100% / $columns * $i;
+  }
+}

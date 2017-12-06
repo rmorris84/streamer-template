@@ -1,0 +1,18 @@
+// --------------------------------------------------------------------
+// Imports
+// --------------------------------------------------------------------
+
+// Font Awesome
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "modules/normalize";
+@import "modules/breakpoints";
+@import "modules/mixins";
+@import "modules/variables";
+@import "modules/typography";
+@import "modules/grid";
+@import "modules/base";
+@import "components/app.scss";
+@import "components/navbar.scss";
+@import "components/hero.scss";

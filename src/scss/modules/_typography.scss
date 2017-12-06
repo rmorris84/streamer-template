@@ -1,0 +1,19 @@
+// --------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------
+
+// Font Imports
+// -------------------------
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900|Raleway");
+
+// Font Stack
+// -------------------------
+$font-main: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+$font-color: $gray-darker;
+$font-inverse: $white;
+$ff-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$ff-serif: Georgia, "Times New Roman", Times, serif !default;
+$ff-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$ff-base: $ff-sans-serif !default;

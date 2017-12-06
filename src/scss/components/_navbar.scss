@@ -1,0 +1,15 @@
+#navbar {
+  .row {
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    .brand {
+      font-family: $font-secondary;
+      font-weight: 900;
+      font-size: 1.8rem;
+    }
+    .social a {
+      font-size: 1rem;
+    }
+  }
+}
