@@ -1,42 +1,55 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { setInterval } from 'timers';
+import styled, { keyframes } from 'styled-components';
+
+const pulse = keyframes`
+from {
+  opacity: 1;
+}
+50% {
+  opacity: 0.5;
+}
+to {
+  opacity: 1;
+}
+`;
+
+const Button = styled.button`
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 1px solid ${props => props.data.custom_color};
+  border-radius: 3px;
+  transition: background 0.5s ease;
+  &:hover {
+    background: ${props => props.data.custom_color};
+    color: black;
+  }
+`;
+
+const Recording = styled.i`
+  color: red;
+  margin-left: 5px;
+  animation: ${pulse} 2s infinite;
+`;
 
 class Status extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      id: process.env.clientId,
-      url: `https://api.twitch.tv/kraken/streams/${this.props.data.twitch_channel}`,
-      online: null,
-    };
-  }
-  componentDidMount() {
-    const delay = 5000;
-    setInterval(() => this.getStatus(), delay);
-  }
-  getStatus() {
-    axios
-      .get(this.state.url, {
-        headers: { 'Client-ID': this.state.id },
-      })
-      .then(res => this.setState({ online: res.data }))
-      .catch(err => console.log(err));
-  }
-  checkingStatus() {
-    if (this.state.online === null) {
-      return (
-        <span>
-          <i className="fa fa-spinner fa-pulse fa-lg fa-fw" />
-        </span>
-      );
-    } else if (this.state.online.stream) {
-      return <span>Online Now!</span>;
-    }
-    return <span>Offline</span>;
-  }
+  componentDidMount() {}
   render() {
-    return <div className="status">{this.checkingStatus()}</div>;
+    return (
+      <div className="status">
+        <Button {...this.props}>
+          {!this.props.stream.stream ? (
+            <span>Offline</span>
+          ) : (
+            <span>
+              Online<Recording className="fa fa-circle" />
+            </span>
+          )}
+        </Button>
+      </div>
+    );
   }
 }
 

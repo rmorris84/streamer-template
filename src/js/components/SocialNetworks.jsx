@@ -7,7 +7,7 @@ class SocialNetworks extends Component {
       color: this.props.data.custom_color,
     };
     return (
-      <div>
+      <div className="social-items">
         {this.props.data.twitch_channel && (
           <span>
             <a style={socialColor} href={`//www.twitch.tv/${this.props.data.twitch_channel}`}>

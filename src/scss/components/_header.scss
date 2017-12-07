@@ -1,0 +1,35 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  .social {
+    display: flex;
+    .social-items {
+      align-self: center;
+    }
+  }
+  .brand {
+    font-family: $font-secondary;
+    font-weight: 900;
+    font-size: 2em;
+  }
+  .status {
+    // i {
+    //   color: red;
+    //   margin-left: 5px;
+    //   animation: pulse 2s infinite;
+    // }
+  }
+}
+
+// @keyframes pulse {
+//   from {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }

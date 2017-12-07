@@ -1,28 +1,15 @@
 #hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  color: white;
-  text-align: center;
+  flex: 1 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   .intro {
-    .profile-pic {
+    text-align: center;
+    img {
       width: 150px;
-      height: 150px;
     }
     .title {
-      font-size: 4em;
-      margin: 0;
-    }
-    .subtitle {
-      font-size: 1.5em;
-      margin: 0;
-    }
-    .status {
-      margin-top: 1em;
-      font-size: 2em;
+      font-size: 3em;
     }
   }
 }

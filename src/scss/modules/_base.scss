@@ -5,16 +5,17 @@
   box-sizing: border-box;
 }
 
+body,
 html {
   height: 100%;
 }
 
 body {
-  font-family: $font-main;
-  height: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: $font-main;
 }
 
 h1,
@@ -26,6 +27,25 @@ h6 {
   font-family: $font-secondary;
 }
 
-.title {
-  padding: 0;
+.container {
+  width: calc(100% - 5em);
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+// .button {
+//   margin: 10px;
+//   padding: 6px 12px;
+//   transition: all 150ms linear;
+//   text-align: center;
+//   text-decoration: none !important;
+//   color: #fff;
+//   border: 0 none;
+//   border-radius: 4px;
+//   font-size: 14px;
+//   opacity: 0.85;
+//   &:hover {
+//     transition: all 150ms linear;
+//     opacity: 1;
+//   }
+// }

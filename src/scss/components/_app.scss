@@ -1,5 +1,7 @@
-.height-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#content {
+  height: 100vh;
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
