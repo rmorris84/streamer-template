@@ -13,22 +13,8 @@ to {
 }
 `;
 
-const Button = styled.button`
-  background: transparent;
-  color: white;
+const Live = styled.span`
   font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 1px solid ${props => props.data.custom_color};
-  border-radius: 3px;
-  transition: background 0.5s ease;
-  &:hover {
-    background: ${props => props.data.custom_color};
-    color: black;
-  }
-`;
-
-const Recording = styled.i`
   color: red;
   margin-left: 5px;
   animation: ${pulse} 2s infinite;
@@ -37,19 +23,7 @@ const Recording = styled.i`
 class Status extends Component {
   componentDidMount() {}
   render() {
-    return (
-      <div className="status">
-        <Button {...this.props}>
-          {!this.props.stream.stream ? (
-            <span>Offline</span>
-          ) : (
-            <span>
-              Online<Recording className="fa fa-circle" />
-            </span>
-          )}
-        </Button>
-      </div>
-    );
+    return !this.props.stream.stream ? <span /> : <Live>&bull;</Live>;
   }
 }
 

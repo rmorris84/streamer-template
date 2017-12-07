@@ -7,18 +7,21 @@ class componentName extends Component {
   render() {
     return (
       <div id="header" className="container">
-        <div className="social">
-          <SocialNetworks {...this.props} />
-        </div>
         <div className="brand">
           {this.props.data.custom_name ? (
-            <span>{this.props.data.custom_name}</span>
+            <span>
+              {this.props.data.custom_name}
+              <Status {...this.props} />
+            </span>
           ) : (
-            <span>{this.props.data.twitch_channel}</span>
+            <span>
+              {this.props.data.twitch_channel}
+              <Status {...this.props} />
+            </span>
           )}
         </div>
-        <div className="nav">
-          <Status {...this.props} />
+        <div className="social">
+          <SocialNetworks {...this.props} />
         </div>
       </div>
     );

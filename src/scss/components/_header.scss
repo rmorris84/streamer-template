@@ -9,27 +9,23 @@
     }
   }
   .brand {
-    font-family: $font-secondary;
-    font-weight: 900;
+    font-family: $font-main;
+    font-weight: 600;
     font-size: 2em;
-  }
-  .status {
-    // i {
-    //   color: red;
-    //   margin-left: 5px;
-    //   animation: pulse 2s infinite;
-    // }
   }
 }
 
-// @keyframes pulse {
-//   from {
-//     opacity: 1;
-//   }
-//   50% {
-//     opacity: 0.5;
-//   }
-//   to {
-//     opacity: 1;
-//   }
-// }
+@media (max-width: 750px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .brand {
+      margin-bottom: 15px;
+    }
+    .social {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

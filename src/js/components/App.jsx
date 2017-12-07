@@ -1,5 +1,6 @@
 // Dependencies
 import React, { Component } from 'react';
+import { injectGlobal } from 'styled-components';
 import axios from 'axios';
 
 // Components
@@ -9,6 +10,14 @@ import Footer from './Footer';
 
 // Data
 import data from '../config/config';
+
+// Global Styles
+// eslint-disable-next-line
+injectGlobal`
+body {
+  color: ${data.font_color};
+}
+`;
 
 class App extends Component {
   constructor(props) {

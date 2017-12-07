@@ -6,18 +6,13 @@ Twitch API to pull channel info.
 * Viewers?
 * Uptime?
 
-Twitter API?
-
-* Latest tweet?
-
 Config.js
 
 * More features
 * Video Background from YouTube?
 
-Social Networks
+Fixes
 
-* Youtube, twitter, facebook, steam, instagram, Discord, Snapchat ect ect.
-* Donation links to popular stream helpers? (streamlabs, streamelements, bebo,
-  streamtip?)
-* Steam Trade link?
+* Live Icon is oval.
+* Issues with certain colors being hard to read.
+* Need to fix issue with background video
