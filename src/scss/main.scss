@@ -5,14 +5,4 @@
 // Font Awesome
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
-
-@import "modules/normalize";
-@import "modules/breakpoints";
-@import "modules/mixins";
-@import "modules/variables";
-@import "modules/typography";
-@import "modules/base";
-@import "components/app.scss";
-@import "components/header.scss";
-@import "components/hero.scss";
-@import "components/footer.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans:400,600");

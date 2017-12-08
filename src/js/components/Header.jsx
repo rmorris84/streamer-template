@@ -1,31 +1,29 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+import Brand from './Brand';
 import SocialNetworks from './SocialNetworks';
-import Status from './Status';
+import { media } from './responsive';
 
-class componentName extends Component {
+const Head = styled.div`
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ${media.md`flex-direction: row;`}
+  }
+`;
+
+class Header extends Component {
   componentDidMount() {}
   render() {
     return (
-      <div id="header" className="container">
-        <div className="brand">
-          {this.props.data.custom_name ? (
-            <span>
-              {this.props.data.custom_name}
-              <Status {...this.props} />
-            </span>
-          ) : (
-            <span>
-              {this.props.data.twitch_channel}
-              <Status {...this.props} />
-            </span>
-          )}
-        </div>
-        <div className="social">
-          <SocialNetworks {...this.props} />
-        </div>
-      </div>
+      <Head className="container">
+        <Brand {...this.props} />
+        <SocialNetworks {...this.props} />
+      </Head>
     );
   }
 }
 
-export default componentName;
+export default Header;

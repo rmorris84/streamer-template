@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
-import Twitch from './Twitch';
+import styled from 'styled-components';
+import ChannelLogo from './ChannelLogo';
+import StreamTitle from './StreamTitle';
+import Category from './Category';
+import Stats from './Stats';
+import ChannelLink from './ChannelLink';
+
+const ChannelInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 class Hero extends Component {
   componentDidUpdate() {}
   render() {
     return (
-      <div id="hero" className="container">
-        <div className="intro">
-          <Twitch {...this.props} />
-        </div>
-      </div>
+      <ChannelInfo className="container centered">
+        <ChannelLogo {...this.props} />
+        <Stats {...this.props} />
+        <StreamTitle {...this.props} />
+        <Category {...this.props} />
+        <ChannelLink {...this.props} />
+      </ChannelInfo>
     );
   }
 }

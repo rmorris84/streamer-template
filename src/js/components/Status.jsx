@@ -6,24 +6,34 @@ from {
   opacity: 1;
 }
 50% {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 to {
   opacity: 1;
 }
 `;
 
-const Live = styled.span`
-  font-size: 1em;
+const Live = styled.div`
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 102%;
   color: red;
-  margin-left: 5px;
+  font-size: 0.8em;
   animation: ${pulse} 2s infinite;
 `;
 
 class Status extends Component {
   componentDidMount() {}
   render() {
-    return !this.props.stream.stream ? <span /> : <Live>&bull;</Live>;
+    return (
+      !this.props.stream.stream || (
+        <Live {...this.props}>
+          <i className="fa fa-circle" style={{ marginRight: '5px' }} />
+          LIVE
+        </Live>
+      )
+    );
   }
 }
 

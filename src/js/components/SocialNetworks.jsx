@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+const SocialItems = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-around;
+`;
+
 const Social = styled.a`
   font-size: 1.2em;
-  padding: 0 0.5em;
   color: ${props => props.data.font_color};
   transition: all 0.5s ease;
   &:hover {
-    color: ${props => props.data.custom_color};
+    color: ${props => props.data.accent_color};
   }
 `;
 
@@ -17,7 +24,7 @@ const Discord = styled.svg`
   margin-bottom: -7px;
   transition: all 0.5s ease;
   &:hover {
-    fill: ${props => props.data.custom_color};
+    fill: ${props => props.data.accent_color};
   }
 `;
 
@@ -25,10 +32,15 @@ class SocialNetworks extends Component {
   componentDidMount() {}
   render() {
     return (
-      <div className="social-items">
+      <SocialItems>
         {this.props.data.email && (
           <Social {...this.props} href={`mailto:${this.props.data.email}`}>
             <i className="fa fa-fw fa-envelope-o" />
+          </Social>
+        )}
+        {this.props.data.merch_link && (
+          <Social {...this.props} href={this.props.data.merch_link}>
+            <i className="fa fa-fw fa-shopping-cart" />
           </Social>
         )}
         {this.props.data.twitter && (
@@ -143,7 +155,22 @@ class SocialNetworks extends Component {
             <i className="fa fa-fw fa-linkedin-square" />
           </Social>
         )}
-      </div>
+        {this.props.data.extra_link1 && (
+          <Social {...this.props} href={this.props.data.extra_link1}>
+            <i className="fa fa-fw fa-star" />
+          </Social>
+        )}
+        {this.props.data.extra_link2 && (
+          <Social {...this.props} href={this.props.data.extra_link2}>
+            <i className="fa fa-fw fa-star" />
+          </Social>
+        )}
+        {this.props.data.extra_link3 && (
+          <Social {...this.props} href={this.props.data.extra_link3}>
+            <i className="fa fa-fw fa-star" />
+          </Social>
+        )}
+      </SocialItems>
     );
   }
 }

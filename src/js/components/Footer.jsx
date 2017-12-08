@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const Foot = styled.div`
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  opacity: 0.4;
+`;
 
 class Footer extends Component {
   render() {
+    const Year = new Date().getFullYear();
     return (
-      <div id="footer" className="container">
+      <Foot className="container">
         <div className="copyright">
           <p>
-            &copy;{' '}
+            &copy;{` ${Year} `}
             {this.props.data.custom_name
               ? this.props.data.custom_name
               : this.props.data.twitch_channel}
           </p>
         </div>
         <div className="attrib">
-          <p>Made by Bob</p>
+          <p>
+            <a href="#" style={{ textDecoration: 'none', color: 'white' }}>
+              <i className="fa fa-lg fa-angle-left" /> Code by Bob /{' '}
+              <i className="fa fa-lg fa-angle-right" />
+            </a>
+          </p>
         </div>
-      </div>
+      </Foot>
     );
   }
 }

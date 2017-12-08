@@ -8,11 +8,10 @@ Twitch API to pull channel info.
 
 Config.js
 
-* More features
-* Video Background from YouTube?
+* More features?
+* More detail on how to use each of the custom styling
 
 Fixes
 
-* Live Icon is oval.
 * Issues with certain colors being hard to read.
-* Need to fix issue with background video
+* Media Queries
