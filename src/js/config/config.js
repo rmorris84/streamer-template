@@ -1,4 +1,5 @@
 const data = {
+  api_key: '5j0r5b7qb7kro03fvka3o8kbq262wwm',
   // Custom name to be displayed
   custom_name: '',
   // Custom tagline to be displayed otherwise Twitch.tv status will be displayed

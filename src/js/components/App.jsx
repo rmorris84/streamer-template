@@ -60,7 +60,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: process.env.clientId,
+      id: data.api_key,
       url: 'https://api.twitch.tv/kraken/',
       streamInfo: [],
       channelInfo: [],
