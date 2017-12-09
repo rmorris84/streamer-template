@@ -1,5 +1,8 @@
 const data = {
+  // Put your Client ID from dev.twtich.tv in here
   api_key: '5j0r5b7qb7kro03fvka3o8kbq262wwm',
+  // Twitch Username: http://twitch.tv/XXXXXX
+  twitch_channel: 'trick2g',
   // Custom name to be displayed
   custom_name: '',
   // Custom tagline to be displayed otherwise Twitch.tv status will be displayed
@@ -10,7 +13,7 @@ const data = {
   font_url: 'https://fonts.googleapis.com/css?family=Montserrat:900',
   // Font Name: Name of the font family selected.
   brand_font: '"Montserrat", sans-serif;',
-  // Font Weights: Enter the weight of the font you picked.
+  // Font Weight: Enter the weight of the font you picked.
   font_weight: '900',
   // Font Color: Has to be a hex color code: https://www.google.com/search?q=hex+color+picker
   font_color: 'white',
@@ -22,34 +25,32 @@ const data = {
   background_start: 60,
   // Overlay Opacity: How dark you want the overlay to be on the background
   overlay_opacity: '0.8',
-  // Twitch Username: http://twitch.tv/XXXXXX
-  twitch_channel: 'Trick2g',
   // Email: XXX@XXX.XXX
   email: '',
   // Merchandise Link: http://whatever.com/
   merch_link: '2',
   // Donation Link: Link to where someone can doante to you eg: http://streamlabs.com/username
-  donation_link: '//www.paypal.com',
+  donation_link: 'd',
   // Twitter Username: http://twitter.com/XXXXX
   twitter: 'bob',
   // YouTube Username: http://youtube.com/user/XXXXX
   youtube: 'bob',
   // Discord: http://discord.gg/XXXX
-  discord: 'a',
+  discord: 'd',
   // Facebook Username: http://facebook.com/XXXXX
   facebook: '',
   // Instagram Username: http://instagram.com/XXXXX
-  instagram: 'a',
+  instagram: 'd',
   // SnapChat Username: http://snapchat.com/add/XXXXX
-  snapchat: 'a',
+  snapchat: 'd',
   // Steam: http://steamcommunity.com/id/XXXXX
-  steam: 'a',
+  steam: 'd',
   // Steam Group: http://steamcommunity.com/groups/XXXXX
   steamgroup: '',
   // Steam Trade Link: https://steamcommunity.com/tradeoffer/new/?XXXXXX
-  steamtrade: 'd',
+  steamtrade: '',
   // Subreddit: http://reddit.com/r/XXXXX
-  reddit: 'a',
+  reddit: '',
   // Github: http://github.com/XXXXX
   github: '',
   // Google Plus: http://plus.google.com/XXXXX
@@ -63,7 +64,7 @@ const data = {
   // Soundcloud: http://soundcloud.com/XXXXX
   soundcloud: '',
   // Spotify: http://open.spotify.com/user/XXXXX
-  spotify: 'a',
+  spotify: '',
   // Tumblr: http://XXXXX.tumblr.com
   tumblr: '',
   // Flickr: http://flickr.com/photos/XXXXX

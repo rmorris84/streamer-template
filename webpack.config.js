@@ -12,7 +12,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: path.join(__dirname, 'src/index.html'),
   filename: 'index.html',
-  title: 'React Boilerplate',
+  title: 'Streamer Site',
   inject: 'body',
   favicon: path.join(__dirname, 'src/assets/icons/favicon.ico'),
 });

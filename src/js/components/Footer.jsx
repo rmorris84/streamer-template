@@ -27,7 +27,7 @@ class Footer extends Component {
         </div>
         <div className="attrib">
           <p>
-            <a href="#" style={{ textDecoration: 'none', color: 'white' }}>
+            <a href="//twitch.tv/bobdanoob" style={{ textDecoration: 'none', color: 'white' }}>
               <FontAwesomeIcon icon={faAngleLeft} size="lg" /> Code by Bob /{' '}
               <FontAwesomeIcon icon={faAngleRight} size="lg" />
             </a>
