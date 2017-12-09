@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
+import { faCircle } from '@fortawesome/fontawesome-free-solid';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 const pulse = keyframes`
 from {
@@ -19,7 +21,7 @@ const Live = styled.div`
   top: 0;
   left: 102%;
   color: red;
-  font-size: 0.8em;
+  font-size: 0.7em;
   animation: ${pulse} 2s infinite;
 `;
 
@@ -29,7 +31,7 @@ class Status extends Component {
     return (
       !this.props.stream.stream || (
         <Live {...this.props}>
-          <i className="fa fa-circle" style={{ marginRight: '5px' }} />
+          <FontAwesomeIcon icon={faCircle} />
           LIVE
         </Live>
       )

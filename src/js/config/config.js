@@ -25,7 +25,7 @@ const data = {
   // Twitch Username: http://twitch.tv/XXXXXX
   twitch_channel: 'Trick2g',
   // Email: XXX@XXX.XXX
-  email: '2',
+  email: '',
   // Merchandise Link: http://whatever.com/
   merch_link: '2',
   // Donation Link: Link to where someone can doante to you eg: http://streamlabs.com/username
@@ -35,19 +35,21 @@ const data = {
   // YouTube Username: http://youtube.com/user/XXXXX
   youtube: 'bob',
   // Discord: http://discord.gg/XXXX
-  discord: 'asdf',
+  discord: 'a',
   // Facebook Username: http://facebook.com/XXXXX
-  facebook: '2',
+  facebook: '',
   // Instagram Username: http://instagram.com/XXXXX
-  instagram: 'sdf',
+  instagram: 'a',
   // SnapChat Username: http://snapchat.com/add/XXXXX
-  snapchat: '',
+  snapchat: 'a',
   // Steam: http://steamcommunity.com/id/XXXXX
-  steam: '2',
+  steam: 'a',
   // Steam Group: http://steamcommunity.com/groups/XXXXX
   steamgroup: '',
+  // Steam Trade Link: https://steamcommunity.com/tradeoffer/new/?XXXXXX
+  steamtrade: 'd',
   // Subreddit: http://reddit.com/r/XXXXX
-  reddit: '',
+  reddit: 'a',
   // Github: http://github.com/XXXXX
   github: '',
   // Google Plus: http://plus.google.com/XXXXX
@@ -61,7 +63,7 @@ const data = {
   // Soundcloud: http://soundcloud.com/XXXXX
   soundcloud: '',
   // Spotify: http://open.spotify.com/user/XXXXX
-  spotify: '2',
+  spotify: 'a',
   // Tumblr: http://XXXXX.tumblr.com
   tumblr: '',
   // Flickr: http://flickr.com/photos/XXXXX

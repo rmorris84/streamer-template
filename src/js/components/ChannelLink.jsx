@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { faTwitch } from '@fortawesome/fontawesome-free-brands';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 const Button = styled.a`
   text-transform: uppercase;
@@ -19,7 +21,7 @@ class ChannelLink extends Component {
   render() {
     return (
       <Button {...this.props} href={`//www.twitch.tv/${this.props.data.twitch_channel}`}>
-        Visit Channel
+        <FontAwesomeIcon icon={faTwitch} /> Visit Channel
       </Button>
     );
   }

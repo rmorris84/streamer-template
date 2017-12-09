@@ -5,7 +5,7 @@ import { media } from './responsive';
 
 const Logo = styled.img`
   margin: 1em;
-  min-width: calc(2vw + 250px);
+  width: calc(3vw + 150px);
 `;
 
 const ChannelLogo = props => <Logo src={props.channel.logo} alt="" />;

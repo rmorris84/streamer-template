@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ChannelLogo from './ChannelLogo';
-import StreamTitle from './StreamTitle';
-import Category from './Category';
 import Stats from './Stats';
+import StreamTitle from './StreamTitle';
+import Divider from './Divider';
+import Category from './Category';
 import ChannelLink from './ChannelLink';
 
 const ChannelInfo = styled.div`
@@ -21,6 +22,7 @@ class Hero extends Component {
         <ChannelLogo {...this.props} />
         <Stats {...this.props} />
         <StreamTitle {...this.props} />
+        <Divider {...this.props} />
         <Category {...this.props} />
         <ChannelLink {...this.props} />
       </ChannelInfo>

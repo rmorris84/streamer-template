@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { faCopyright, faAngleLeft, faAngleRight } from '@fortawesome/fontawesome-free-solid';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 const Foot = styled.div`
   padding: 1em 0;
@@ -16,7 +18,8 @@ class Footer extends Component {
       <Foot className="container">
         <div className="copyright">
           <p>
-            &copy;{` ${Year} `}
+            <FontAwesomeIcon icon={faCopyright} size="lg" />
+            {` ${Year} `}
             {this.props.data.custom_name
               ? this.props.data.custom_name
               : this.props.data.twitch_channel}
@@ -25,8 +28,8 @@ class Footer extends Component {
         <div className="attrib">
           <p>
             <a href="#" style={{ textDecoration: 'none', color: 'white' }}>
-              <i className="fa fa-lg fa-angle-left" /> Code by Bob /{' '}
-              <i className="fa fa-lg fa-angle-right" />
+              <FontAwesomeIcon icon={faAngleLeft} size="lg" /> Code by Bob /{' '}
+              <FontAwesomeIcon icon={faAngleRight} size="lg" />
             </a>
           </p>
         </div>

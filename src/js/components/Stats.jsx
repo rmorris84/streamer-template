@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { faEye, faUsers } from '@fortawesome/fontawesome-free-solid';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 const StatsDiv = styled.ul`
   display: flex;
@@ -9,7 +11,7 @@ const StatsDiv = styled.ul`
 `;
 const StatItem = styled.li`
   margin: 0 10px;
-  padding-right: 8px;
+  padding: 5px 8px;
   border-radius: 3px;
   background: ${props => props.data.accent_color};
 `;
@@ -19,11 +21,11 @@ class Stats extends Component {
     return (
       <StatsDiv>
         <StatItem {...this.props}>
-          <i className="fa fa-eye" style={{ margin: '8px' }} />
+          <FontAwesomeIcon icon={faEye} style={{ marginRight: '5px' }} />
           {this.props.channel.views}
         </StatItem>
         <StatItem {...this.props}>
-          <i className="fa fa-users" style={{ margin: '8px' }} />
+          <FontAwesomeIcon icon={faUsers} style={{ marginRight: '5px' }} />
           {this.props.channel.followers}
         </StatItem>
       </StatsDiv>
