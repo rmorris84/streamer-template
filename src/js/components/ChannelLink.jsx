@@ -21,7 +21,7 @@ class ChannelLink extends Component {
   render() {
     return (
       <Button {...this.props} href={`//www.twitch.tv/${this.props.data.twitch_channel}`}>
-        <FontAwesomeIcon icon={faTwitch} /> Visit Channel
+        <FontAwesomeIcon icon={faTwitch} size="lg" style={{ marginRight: '10px' }} /> Visit Channel
       </Button>
     );
   }

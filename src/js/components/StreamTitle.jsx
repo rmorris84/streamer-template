@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { media } from './responsive';
 
@@ -13,11 +12,14 @@ const Title = styled.h2`
   ${media.xl`font-size: 2em`};
 `;
 
-const StreamTitle = props =>
-  (!props.stream.stream ? (
-    <Title>{props.data.offline_tagline}</Title>
-  ) : (
-    <Title>{props.stream.stream.channel.status}</Title>
-  ));
+class StreamTitle extends Component {
+  render() {
+    return !this.props.stream.stream ? (
+      <Title>{this.props.data.offline_tagline}</Title>
+    ) : (
+      <Title>{this.props.stream.stream.channel.status}</Title>
+    );
+  }
+}
 
 export default StreamTitle;

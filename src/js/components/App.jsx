@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import axios from 'axios';
 import $ from 'jquery';
+// eslint-disable-next-line
 import tubular from 'jquery_tubular_plugin';
 
 // Components
@@ -72,13 +73,15 @@ class App extends Component {
         headers: { 'Client-ID': this.state.id },
       })
       .then(res => this.setState({ streamInfo: res.data }))
-      .catch(err => console.log(err));
+      // eslint-disable-next-line
+      .catch(err => console.log(`Unable to fetch Twitch API ${err}`));
     axios
       .get(`${this.state.url}channels/${data.twitch_channel}`, {
         headers: { 'Client-ID': this.state.id },
       })
       .then(res => this.setState({ channelInfo: res.data }))
-      .catch(err => console.log(err));
+      // eslint-disable-next-line
+      .catch(err => console.log(`Unable to fetch Twitch API ${err}`));
     if (data.background_video) {
       $('body').tubular({
         videoId: data.background_video,
