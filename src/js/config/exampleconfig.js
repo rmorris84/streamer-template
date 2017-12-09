@@ -2,9 +2,9 @@ const data = {
   // Put your Client ID from dev.twtich.tv in here. Create and app, and it will give you a Client-ID.
   api_key: '5j0r5b7qb7kro03fvka3o8kbq262wwm',
   // Twitch Username: http://twitch.tv/XXXXXX
-  twitch_channel: 'trick2g',
+  twitch_channel: 'bobdanoob',
   // Custom Name: In case you want something other than your Twitch.tv name displayed.
-  custom_name: '',
+  custom_name: 'Bob',
   // Offline Message: Message to be displayed when you're not online.
   offline_tagline: 'Im a Part-time Stripper and I do hair.',
   // Custom Color: Has to be a hex color code: https://www.google.com/search?q=hex+color+picker
@@ -25,7 +25,7 @@ const data = {
 
   // Background Image: URL to image, eg: https://i.imgur.com/0HRL0Db.jpg
   background_image: '',
-  // Background Video: Video ID from YouTube, eg: https://www.youtube.com/watch?v=XXXXX vzNcSvKCOyA
+  // Background Video: Video ID from YouTube, eg: https://www.youtube.com/watch?v=XXXXX
   background_video: 'vzNcSvKCOyA',
   // Background Video Start: What time to start the video at if you wanna skip an intro
   background_start: 60,
@@ -37,55 +37,55 @@ const data = {
   // If you want to use it, please follow the format provided and fill in the XXXXX or full url where instructed.
 
   // Email: XXX@XXX.XXX
-  email: '',
+  email: 'bob@aol.com',
   // Merchandise Link: http://fullurl.com/
-  merch_link: '2',
+  merch_link: 'www.designsbyhuman.com/bob',
   // Donation Link: Link to where someone can doante to you eg: http://fullurl.com/username
-  donation_link: 'd',
+  donation_link: 'www.paypal.com/bob',
   // Twitter Username: http://twitter.com/XXXXX
-  twitter: 'bob',
+  twitter: 'bobdanoob',
   // YouTube Username: http://youtube.com/user/XXXXX
-  youtube: 'bob',
+  youtube: 'bobdanoob',
   // Discord: http://discord.gg/XXXX
-  discord: 'd',
+  discord: 'X2gl7saswlkj',
   // Facebook Username: http://facebook.com/XXXXX
-  facebook: '',
+  facebook: 'bobdanoob',
   // Instagram Username: http://instagram.com/XXXXX
-  instagram: 'd',
+  instagram: 'bobdanoob',
   // SnapChat Username: http://snapchat.com/add/XXXXX
-  snapchat: 'd',
+  snapchat: 'bobdanoob',
   // Steam: http://steamcommunity.com/id/XXXXX
-  steam: 'd',
+  steam: 'bobdanoob',
   // Steam Group: http://steamcommunity.com/groups/XXXXX
-  steamgroup: '',
+  steamgroup: 'bobdanoobs',
   // Steam Trade Link: https://steamcommunity.com/tradeoffer/new/?XXXXXX
-  steamtrade: '',
+  steamtrade: 'partner=45748948&token=vPvIXBNd',
   // Subreddit: http://reddit.com/r/XXXXX
-  reddit: '',
+  reddit: 'bobdanoob',
   // Github: http://github.com/XXXXX
-  github: '',
+  github: 'bobdanoob',
   // Google Plus: http://plus.google.com/XXXXX
-  google: '',
+  google: 'bobdanoob',
   // Amazon Affliate: http://somethingamazong.com/XXXXX
-  amazon: '',
+  amazon: 'bobdanoob',
   // Pintrest: http://pintrest.com/XXXXX
-  pinterest: '',
+  pinterest: 'bobdanoob',
   // BandCamp: http://XXXXX.bandcamp.com
-  bandcamp: '',
+  bandcamp: 'bobdanoob',
   // Soundcloud: http://soundcloud.com/XXXXX
-  soundcloud: '',
+  soundcloud: 'bobdanoob',
   // Spotify: http://open.spotify.com/user/XXXXX
-  spotify: '',
+  spotify: 'bobdanoob',
   // Tumblr: http://XXXXX.tumblr.com
-  tumblr: '',
+  tumblr: 'bobdanoob',
   // Flickr: http://flickr.com/photos/XXXXX
-  flickr: '',
+  flickr: 'bobdanoob',
   // LinkedIn: http://linkedin.com/in/XXXXX
-  linkedin: '',
+  linkedin: 'bobdanoob',
   // Whatever Link: Need a link to something thats not provided here? Then fill in the link here.
-  extra_link1: '',
-  extra_link2: '',
-  extra_link3: '',
+  extra_link1: 'www.whatever.com',
+  extra_link2: 'www.coolsite.com',
+  extra_link3: 'www.checkitout.com',
   // All done! Upload these files to your webserver and refresh your site!
 };
 

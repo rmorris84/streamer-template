@@ -54,11 +54,6 @@ module.exports = {
         },
       },
       {
-        // Bundle Styles and run autoprefixer
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
-      },
-      {
         // Bundles font files
         test: /\.(woff|woff2|eot|ttf)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: {

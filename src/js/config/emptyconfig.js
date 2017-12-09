@@ -1,36 +1,36 @@
 const data = {
   // Put your Client ID from dev.twtich.tv in here. Create and app, and it will give you a Client-ID.
-  api_key: '5j0r5b7qb7kro03fvka3o8kbq262wwm',
+  api_key: '',
   // Twitch Username: http://twitch.tv/XXXXXX
-  twitch_channel: 'trick2g',
+  twitch_channel: '',
   // Custom Name: In case you want something other than your Twitch.tv name displayed.
   custom_name: '',
   // Offline Message: Message to be displayed when you're not online.
-  offline_tagline: 'Im a Part-time Stripper and I do hair.',
+  offline_tagline: '',
   // Custom Color: Has to be a hex color code: https://www.google.com/search?q=hex+color+picker
-  accent_color: '#4ad6ff',
+  accent_color: '',
 
   // Custom Font: You can use a custom Google font to change the styling of text on the site.
 
   // Font URL:  https://fonts.google.com/ Enter the url to the font here.
-  font_url: 'https://fonts.googleapis.com/css?family=Montserrat:900',
+  font_url: '',
   // Font Name: When you select a font it will give you a 'Specify in CSS' line. We only need the name portion after font-family. Be careful as this needs to have the quotes around it.
-  brand_font: "'Montserrat', sans-serif;",
+  brand_font: '',
   // Font Weight: If you picked a font with a weight, you need to add it here. You can see this in the 'Customize' tab when selecting a font.
-  font_weight: '900',
+  font_weight: '',
   // Font Color: Pick an accent color that you like. Has to be a hex color code: https://www.google.com/search?q=hex+color+picker
-  font_color: 'white',
+  font_color: '',
 
   // Background Image or Video: Use one or the other, but not both. If you use both , then the video will be covered by the image.
 
   // Background Image: URL to image, eg: https://i.imgur.com/0HRL0Db.jpg
   background_image: '',
   // Background Video: Video ID from YouTube, eg: https://www.youtube.com/watch?v=XXXXX vzNcSvKCOyA
-  background_video: 'vzNcSvKCOyA',
+  background_video: '',
   // Background Video Start: What time to start the video at if you wanna skip an intro
-  background_start: 60,
+  background_start: 0,
   // Overlay Opacity: How dark you want the overlay to be on the background
-  overlay_opacity: '0.8',
+  overlay_opacity: '',
 
   // Below you will fill out the links that show up at the top of the page in icons.
   // If you don't use one then just leave it empty.
@@ -39,23 +39,23 @@ const data = {
   // Email: XXX@XXX.XXX
   email: '',
   // Merchandise Link: http://fullurl.com/
-  merch_link: '2',
+  merch_link: '',
   // Donation Link: Link to where someone can doante to you eg: http://fullurl.com/username
-  donation_link: 'd',
+  donation_link: '',
   // Twitter Username: http://twitter.com/XXXXX
-  twitter: 'bob',
+  twitter: '',
   // YouTube Username: http://youtube.com/user/XXXXX
-  youtube: 'bob',
+  youtube: '',
   // Discord: http://discord.gg/XXXX
-  discord: 'd',
+  discord: '',
   // Facebook Username: http://facebook.com/XXXXX
   facebook: '',
   // Instagram Username: http://instagram.com/XXXXX
-  instagram: 'd',
+  instagram: '',
   // SnapChat Username: http://snapchat.com/add/XXXXX
-  snapchat: 'd',
+  snapchat: '',
   // Steam: http://steamcommunity.com/id/XXXXX
-  steam: 'd',
+  steam: '',
   // Steam Group: http://steamcommunity.com/groups/XXXXX
   steamgroup: '',
   // Steam Trade Link: https://steamcommunity.com/tradeoffer/new/?XXXXXX

@@ -19,6 +19,7 @@
   "scripts": {
     "dev": "webpack-dev-server --progress",
     "build": "webpack --progress",
+    "deploy": "netlify deploy",
     "flow start": "flow start",
     "flow stop": "flow stop",
     "flow status": "flow status",
