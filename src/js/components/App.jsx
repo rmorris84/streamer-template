@@ -86,6 +86,7 @@ class App extends Component {
         wrapperZIndex: -1,
       });
     }
+    document.title = `${data.twitch_channel} - ${data.site_title}`;
   }
   render() {
     return (

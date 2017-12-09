@@ -2,11 +2,13 @@ const data = {
   // Put your Client ID from dev.twtich.tv in here. Create and app, and it will give you a Client-ID.
   api_key: '5j0r5b7qb7kro03fvka3o8kbq262wwm',
   // Twitch Username: http://twitch.tv/XXXXXX
-  twitch_channel: 'trick2g',
+  twitch_channel: 'TimTheTatman',
   // Custom Name: In case you want something other than your Twitch.tv name displayed.
   custom_name: '',
   // Offline Message: Message to be displayed when you're not online.
   offline_tagline: 'Im a Part-time Stripper and I do hair.',
+  // Site Title. A title the be displayed for the website.
+  site_title: 'I like fat chicks.',
   // Custom Color: Has to be a hex color code: https://www.google.com/search?q=hex+color+picker
   accent_color: '#4ad6ff',
 
@@ -26,11 +28,11 @@ const data = {
   // Background Image: URL to image, eg: https://i.imgur.com/0HRL0Db.jpg
   background_image: '',
   // Background Video: Video ID from YouTube, eg: https://www.youtube.com/watch?v=XXXXX vzNcSvKCOyA
-  background_video: 'vzNcSvKCOyA',
+  background_video: 'wzDxtujfvtU',
   // Background Video Start: What time to start the video at if you wanna skip an intro
-  background_start: 60,
+  background_start: 14,
   // Overlay Opacity: How dark you want the overlay to be on the background
-  overlay_opacity: '0.8',
+  overlay_opacity: '0.9',
 
   // Below you will fill out the links that show up at the top of the page in icons.
   // If you don't use one then just leave it empty.
