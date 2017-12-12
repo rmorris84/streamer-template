@@ -12,12 +12,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: path.join(__dirname, 'src/index.html'),
   filename: 'index.html',
-  title: 'Streamer Site',
   inject: 'body',
-  favicon: path.join(__dirname, 'src/assets/icons/favicon.ico'),
 });
 // Vendor Libs to be bundled separately
-const VENDOR_LIBS = ['react', 'react-dom', 'jquery'];
+const vendorLibs = ['react', 'react-dom', 'jquery'];
+// Copy Webpack Plugin
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Webpack Configs
 module.exports = {
@@ -32,8 +32,8 @@ module.exports = {
   },
   // Entry point for Webpack to bundle
   entry: {
-    bundle: ['react-hot-loader/patch', './src/js/main.jsx'],
-    vendor: VENDOR_LIBS,
+    bundle: ['react-hot-loader/patch', 'babel-polyfill', './src/js/main.jsx'],
+    vendor: vendorLibs,
   },
   // Where to bundle to
   output: {
@@ -45,7 +45,7 @@ module.exports = {
       {
         // Convert ES6
         test: /\.js?x$/,
-        exclude: /(node_modules)/,
+        exclude: '/(node_modules)/',
         use: {
           loader: 'babel-loader',
           options: {
@@ -102,6 +102,8 @@ module.exports = {
     new Dotenv(),
     // Config for HTML Template
     HtmlWebpackPluginConfig,
+    // Copy config file
+    new CopyWebpackPlugin([{ from: './src/config.json', to: './' }]),
     // Shows relative path when HMR is enabled
     new webpack.NamedModulesPlugin(),
     // Enabled HMR

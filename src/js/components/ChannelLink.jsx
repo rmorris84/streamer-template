@@ -6,6 +6,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 const Button = styled.a`
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 3px;
   color: ${props => props.data.font_color};
   border: 2px solid ${props => props.data.accent_color};
   border-radius: 5px;

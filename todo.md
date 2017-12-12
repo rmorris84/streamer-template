@@ -31,3 +31,10 @@
 ## Update Readme.md
 
 * We need to spice that up a bit.
+
+## Make landing page for github pages?
+
+* React again?
+* Docs on this as well. Little more in depth here than in the config.js file.
+* Pictures of how to do certain things.
+* I sure as hell dont want a bunch of emails on how to use this.

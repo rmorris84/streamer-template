@@ -1,5 +1,6 @@
 {
-  "presets": ["react", "env", "flow"],
+  "presets": ["react", "env", "es2015", "flow"],
+  "plugins": ["syntax-async-functions", "transform-regenerator"],
   "env": {
     "development": {
       "presets": ["react-hmre"]
