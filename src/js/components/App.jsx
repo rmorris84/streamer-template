@@ -57,7 +57,7 @@ class App extends Component {
     html,body {margin: 0;padding: 0;background: #000;font-family: 'Roboto', sans-serif; font-weight: 500;overflow-x: hidden;}
     h1,h2 {display: inline-block;font-family: ${data.brand_font};font-weight: ${
   data.font_weight
-}; padding: 0; margin: 0;white-space: nowrap;}
+}; padding: 0; margin: 0;}
     p {margin: 0;padding: 0;}
     .container {width: calc(100% - 4em);max-width: 1600px;margin: 0 auto;}
     #hero {display: flex;flex-direction: column;justify-content: center;align-items: center;}

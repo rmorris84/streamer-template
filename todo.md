@@ -1,7 +1,3 @@
-## Twitch API to pull channel info.
-
-* Viewers? Currently Playing: Whatever for ##### viewers?
-
 ## Config.js
 
 * More features? Like what?
@@ -15,22 +11,9 @@
 
 * Do we want to include this stuff?
 
-## Site title?
-
-* Right now they have to fill it in manually in the HTML file... Junicus is
-  gonna fix this for sure. We dont need to worry about it. Thanks!
-
 ## Proptypes.
 
-* These can just suck some nuts.
-
-## Meta Data?
-
-* do we want to messs with this?
-
-## Update Readme.md
-
-* We need to spice that up a bit.
+* These need to be done at some point
 
 ## Make landing page for github pages?
 

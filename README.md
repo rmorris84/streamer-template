@@ -1,67 +1,37 @@
-![](https://i.imgur.com/tOIOJz1.png)
+![](https://i.imgur.com/3HE9msU.png)
 
-# Simple React Boilerplate
+# Twitch Streamer Website Template
 
-Simple React Boilerplate for my projects.
+This is really simple one page website. Super simple setup and easy to customize.
+
+## Demo
+
+[Check out the demo](https://streamer-site.netlify.com/)
 
 ## Getting Started
 
-1. Install
-2. Setup ESLint, Flow, and Prettier
-   [VSCode setup](https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-development-c9d95db07213)
-3. Run Dev Server
-4. Run Flow
-5. Start Building
+1. Download.
+2. Fill out the config.json.
+3. Upload.
 
-#### Install
+Its really that simple!
 
-```
-npm install
-```
+## Customize
 
-#### for Development
+There is a config.json that has some examples and has some comments on how you should fill it out. If you still need some help, open up an issue on GitHub
 
-```
-npm run dev
-```
+## Made With...
 
-#### for Build
-
-```
-npm run build
-```
-
-## Flow
-
-```
-// start the flow server
-npm run flow start
-// stop the flow server
-npm run flow stop
-// check the flow status
-npm run flow status
-// check the flow coverage percentage
-npm run flow coverage
-```
-
-## Features
-
-* [React](reactjs.org) 16
-* [jQuery](jquery.com) Javascript Library
-* [FontAwesome](http://fontawesome.io/) Icons
-* [Webpack](webpack.js.org) 3 conveniently bundles your code for you.
-* [Babel](babeljs.io) lets you use ES6/7 features.
-* [ESLint](https://eslint.org/) with
-  [AirBnB](https://github.com/airbnb/javascript) Rules
-* [Flow](https://flow.org/) Static type checker for JS
-* [Prettier](https://prettier.io/) Code formatter
-* [Webpack Dev Server](https://webpack.js.org/configuration/dev-server/) with
-  [Hot Module Reloading](https://webpack.js.org/guides/hot-module-replacement/)
+* [React](//reactjs.org) 16
+* [jQuery](//jquery.com) Javascript Library
+* [FontAwesome 5](//fontawesome.com/) Icons
+* [Webpack](//webpack.js.org) 3 conveniently bundles your code for you.
+* [Babel](//babeljs.io) lets you use ES6/7 features.
+* [ESLint](//eslint.org/) with
+  [AirBnB](//github.com/airbnb/javascript) Rules
+* [Flow](//flow.org/) Static type checker for JS
+* [Prettier](//prettier.io/) Code formatter
+* [Webpack Dev Server](//webpack.js.org/configuration/dev-server/) with
+  [Hot Module Reloading](//webpack.js.org/guides/hot-module-replacement/)
   for JS and CSS makes development quick and easy.
-* CSS pre-processors setup for [SASS](http://sass-lang.com/) lets you keep your
-  styles clean and organized.
-
-## Todo
-
-* Add testing with [Jest](https://facebook.github.io/jest/)
-* More to come...
+* [Styled Components](//styled-components.com/)
