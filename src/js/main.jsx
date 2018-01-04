@@ -8,7 +8,9 @@ import App from './components/App';
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <DocumentTitle title="Some Title">
+        <Component />
+      </DocumentTitle>
     </AppContainer>,
     document.getElementById('app'),
   );
